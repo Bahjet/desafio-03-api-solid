@@ -10,10 +10,10 @@ jobs:
     services:
       postgres:
         image: bitnami/postgresql
-        environment:
-          - POSTGRESQL_USERNAME=docker
-          - POSTGRESQL_PASSWORD=docker
-          - POSTGRESQL_DATABASE=apisolid
+        env:
+          - POSTGRESQL_USERNAME: docker
+          - POSTGRESQL_PASSWORD: docker
+          - POSTGRESQL_DATABASE: apisolid
         ports:
           - 5432:5432
 
