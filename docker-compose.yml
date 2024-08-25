@@ -1,0 +1,21 @@
+#arquivo de criação do docker com o postgresql
+
+## comando para criar no console
+
+# docker run --name desafio3FindAFriend -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+
+# workflow para criar o container com o postgresql
+
+# para criar ou iniciar use, docker compose up -d
+# para parar todos os containers use, docker compose stop
+
+version: '3'
+services:
+  desafio3FindAFriend:
+    image: bitnami/postgresql
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=apisolid
+    ports:
+      - 5432:5432
