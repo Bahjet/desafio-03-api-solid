@@ -1,6 +1,6 @@
 Nesse desafio desenvolveremos uma API para a adoção de animais, a FindAFriend API, utilizando SOLID e testes.
 
-### Regras da aplicação
+### Regras da aplicação.
 
 - [x] Deve ser possível cadastrar um pet 
 - [x] Deve ser possível listar todos os pets disponíveis para adoção em uma cidade
